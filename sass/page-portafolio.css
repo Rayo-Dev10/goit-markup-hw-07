@@ -73,6 +73,7 @@ body {
 .filters__button:hover, .filters__button:focus {
   box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.3);
   transform: scale(1.05);
+  background-color: rgb(33, 150, 243);
 }
 
 .filters__item:first-child .filters__button {
