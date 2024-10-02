@@ -29,8 +29,6 @@ For Each objFile In objFolder.Files
     End If
 Next
 
-WScript.Echo "Proceso completado."
-
 ' Liberar objetos
 Set objFile = Nothing
 Set objFolder = Nothing

@@ -28,11 +28,6 @@
   transform: scale(1.05);
 }
 
-.address-transition:hover, .address-transition:focus {
-  --secondary-text-color:$active-color;
-  --footer-text-color:$active-color;
-}
-
 .footer__contact {
   line-height: 1.46;
   letter-spacing: 0.03em;
@@ -72,6 +67,10 @@
   fill: rgb(255, 255, 255);
   display: block;
   transition: color, transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  padding: 12px;
 }
 
 .footer__social--item:hover, .footer__social--item:focus {
@@ -82,6 +81,10 @@
 .footer__social--list li {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer__social-icon {
+  fill: rgb(255, 255, 255);
 }
 
 /* ::: Footer :: FooterJoin ::: Fin */

@@ -1,5 +1,8 @@
-/* ::: Modal :: Inicio :: Button hero ::: */
-/* ::: Modal :: Contenedor ::: Inicio */
+@charset "UTF-8";
+/* Mixin para el backdrop */
+/* Mixin para el modal */
+/* Mixin para el formulario modal */
+/* Aplicación de los mixins */
 .backdrop {
   background-color: rgba(0, 0, 0, 0.2);
   height: 100%;
@@ -40,8 +43,13 @@
   top: 8px;
   width: 30px;
 }
+.modal .close-btn:hover {
+  fill: rgb(33, 150, 243);
+}
+.modal .close-btn {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
 
-/* ::: Modal :: Form ::: Inicio */
 .modal-form {
   display: block;
   padding: 40px;
@@ -88,7 +96,7 @@
   border-color: rgba(33, 33, 33, 0.2);
   outline-color: rgba(33, 33, 33, 0.2);
   margin-top: 4px;
-  padding: 12px 42px 12px 42px;
+  padding: 12px 42px;
 }
 .modal-form .form-textarea {
   width: 100%;
@@ -140,7 +148,7 @@
   border: none;
   border-radius: 4px;
   position: relative;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14), 0 2px 1px rgba(0, 0, 0, 0.2);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form .modal-button-section {
@@ -174,7 +182,4 @@
 .modal-form .modal-terms:checked ~ .modal-tick {
   background-color: rgb(33, 150, 243);
   visibility: visible;
-}
-
-/* ::: Modal :: Form ::: Fin */
-/* ::: Pagina :: Fin :: Estudio ::: *//*# sourceMappingURL=global-modales.css.map */
+}/*# sourceMappingURL=global-modales.css.map */

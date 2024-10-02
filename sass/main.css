@@ -46,7 +46,17 @@ body {
   overflow: hidden;
 }
 
-/* ::: Global :: Inicio :: Header ::: */
+/* Mixin para el contenedor del header */
+/* Mixin para el logo */
+/* Mixin para la sección de navegación */
+/* Mixin para la lista de navegación */
+/* Mixin para la lista de navegación subrayada */
+/* Mixin para los elementos de la lista de navegación y contacto */
+/* Mixin para el estado hover y focus */
+/* Mixin para la lista de contacto */
+/* Mixin para el conjunto de contacto */
+/* Mixin para el ícono de contacto */
+/* Aplicación de los mixins */
 .header__content {
   display: flex;
   align-items: center;
@@ -81,11 +91,17 @@ body {
   border-radius: 2px;
 }
 
-.header__nav-list--item, .header__contact-set--item {
+.header__nav-list--item,
+.header__contact-set--item {
   color: rgb(33, 33, 33);
 }
 
-.header__contact-set--item:hover, .logo__set:hover, .header__nav-list--item:hover, .header__contact-set--item:focus, .logo__set:focus, .header__nav-list--item:focus {
+.header__contact-set--item:hover,
+.logo__set:hover,
+.header__nav-list--item:hover,
+.header__contact-set--item:focus,
+.logo__set:focus,
+.header__nav-list--item:focus {
   color: rgb(33, 150, 243);
   transform: scale(1.1);
 }
@@ -116,12 +132,10 @@ body {
   margin-right: 10px;
   fill: rgb(117, 117, 117);
 }
-
 .contact-set--icon:hover, .contact-set--icon:focus {
   fill: rgb(33, 150, 243);
 }
 
-/* ::: Global :: Fin :: Header ::: */
 .hero {
   background-color: rgb(47, 48, 58);
   margin: 0 auto;
@@ -138,10 +152,10 @@ body {
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.06em;
-  line-height: 1.88;
-  margin-top: 40px;
   padding: 10px 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  margin-top: 40px;
   position: absolute;
   top: 430px;
   left: 700px;
@@ -170,10 +184,8 @@ body {
   left: 452px;
 }
 
-button:hover, button:focus {
-  background-color: rgb(33, 150, 243);
-  color: rgb(255, 255, 255);
-  cursor: pointer;
+button:hover,
+button:focus {
   transform: scale(1.05);
 }
 
@@ -201,7 +213,6 @@ button:hover, button:focus {
   position: absolute;
   width: 100%;
 }
-
 .work__overlay-section > p {
   color: rgb(255, 255, 255);
   font-size: 14px;
@@ -259,97 +270,79 @@ button:hover, button:focus {
 .team {
   background-color: rgb(245, 244, 250);
 }
-
-.team__title {
+.team .team__title {
+  font-size: 36px;
   font-weight: 700;
   color: rgb(33, 33, 33);
-  font-size: 36px;
-  text-align: center;
   line-height: 1;
   margin-bottom: 50px;
+  text-align: center;
 }
-
-.team__list {
+.team .team__list {
   display: flex;
   justify-content: space-between;
   gap: 30px;
+  flex-wrap: nowrap;
 }
-
-.team__card {
+.team .team__card {
   background-color: rgb(255, 255, 255);
-  border-radius: 0 0 4px 4px;
+  border-radius: 4px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14), 0 2px 1px rgba(0, 0, 0, 0.2);
 }
-
-.team__info {
+.team .team__info {
   padding: 30px 0;
   text-align: center;
 }
-
-.team__member {
+.team .team__member {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.19;
   letter-spacing: 0.03em;
+  line-height: 1.19;
   margin-bottom: 10px;
 }
-
-.team__role {
+.team .team__role {
   font-weight: 400;
   font-size: 16px;
   letter-spacing: 0.03em;
   color: rgb(117, 117, 117);
 }
-
-.team__rrss--list {
+.team .team__rrss--list {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   gap: 10px;
+  flex-wrap: wrap;
   margin-top: 16px;
 }
-
-.team__rrss--icon {
+.team .team__rrss--icon {
   fill: rgb(175, 177, 184);
   display: block;
 }
-
-.team__rrss--list > li {
+.team .team__rrss--list > li {
   padding: 12px;
   border-radius: 50%;
   transition: color, background-color, transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.team__rrss--icon:hover {
-  background-color: rgb(33, 150, 243);
-  color: rgb(255, 255, 255);
-}
-
-.team__rrss--list > li:hover, .team__rrss--list > li:focus {
+.team .team__rrss--list > li:hover, .team .team__rrss--list > li:focus {
   background-color: rgb(33, 150, 243);
   cursor: pointer;
 }
-
-.team__rrss--list > li:hover .team__rrss--icon, .team__rrss--list > li:focus .team__rrss--icon {
+.team .team__rrss--list > li:hover .team__rrss--icon, .team .team__rrss--list > li:focus .team__rrss--icon {
   fill: rgb(255, 255, 255);
 }
 
 .clients {
   text-align: center;
 }
-
 .clients__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   margin-bottom: 50px;
 }
-
 .clients__list {
   display: flex;
   justify-content: space-between;
 }
-
 .clients__item {
   width: 170px;
   height: 92px;
@@ -357,23 +350,22 @@ button:hover, button:focus {
   border-radius: 4px;
   transition: color, transform cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
-
+.clients__item:hover, .clients__item:focus {
+  border-color: rgb(33, 150, 243);
+  transform: scale(1.05);
+}
+.clients__item:hover .clients__icon, .clients__item:focus .clients__icon {
+  fill: rgb(33, 150, 243);
+}
 .clients__icon {
   fill: rgb(175, 177, 184);
   margin: 16px 32px;
 }
 
-.clients__item:hover, .clients__item:focus {
-  border-color: rgb(33, 150, 243);
-  transform: scale(1.05);
-}
-
-.clients__item:hover .clients__icon, .clients__item:focus .clients__icon {
-  fill: rgb(33, 150, 243);
-}
-
-/* ::: Modal :: Inicio :: Button hero ::: */
-/* ::: Modal :: Contenedor ::: Inicio */
+/* Mixin para el backdrop */
+/* Mixin para el modal */
+/* Mixin para el formulario modal */
+/* Aplicación de los mixins */
 .backdrop {
   background-color: rgba(0, 0, 0, 0.2);
   height: 100%;
@@ -414,8 +406,13 @@ button:hover, button:focus {
   top: 8px;
   width: 30px;
 }
+.modal .close-btn:hover {
+  fill: rgb(33, 150, 243);
+}
+.modal .close-btn {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
 
-/* ::: Modal :: Form ::: Inicio */
 .modal-form {
   display: block;
   padding: 40px;
@@ -462,7 +459,7 @@ button:hover, button:focus {
   border-color: rgba(33, 33, 33, 0.2);
   outline-color: rgba(33, 33, 33, 0.2);
   margin-top: 4px;
-  padding: 12px 42px 12px 42px;
+  padding: 12px 42px;
 }
 .modal-form .form-textarea {
   width: 100%;
@@ -514,7 +511,7 @@ button:hover, button:focus {
   border: none;
   border-radius: 4px;
   position: relative;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14), 0 2px 1px rgba(0, 0, 0, 0.2);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form .modal-button-section {
@@ -550,8 +547,6 @@ button:hover, button:focus {
   visibility: visible;
 }
 
-/* ::: Modal :: Form ::: Fin */
-/* ::: Pagina :: Fin :: Estudio ::: */
 h1, h2, h3, h4, h5, h6, p, a {
   margin: 0;
 }
@@ -599,6 +594,8 @@ body {
   overflow: hidden;
 }
 
+/* Mixin para transiciones */
+/* Mixin para botones de filtro */
 /* ::: Pagina :: Inicio :: Portafolio ::: */
 /* ::: Sección :: Inicio :: Filtros ::: */
 /* :::::::::: Microsección :: Botones de filtro ::: Inicio */
@@ -617,13 +614,11 @@ body {
   border: none;
   font-weight: 500;
   line-height: 1.62;
-  transition: transform 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: color, background-color, transform;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: transform;
 }
-
-.filters__button:hover,
-.filters__button:focus {
+.filters__button:hover, .filters__button:focus {
   box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.3);
   transform: scale(1.05);
 }
@@ -656,13 +651,13 @@ body {
   height: 100%;
   background-color: rgb(33, 150, 243);
   opacity: 0.9;
-  transform: translatey(100%);
+  transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio__card:hover .portfolio__overlay,
 .portfolio__info-active:hover .portfolio__overlay {
-  transform: translateX(0);
+  transform: translateY(0);
 }
 
 .portfolio__overlay > p {
@@ -704,9 +699,8 @@ body {
 
 .portfolio__item {
   flex-basis: calc((100% - 60px) / 3);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), cursor, transform;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .portfolio__item:hover {
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12), 0 4px 4px 0 rgba(0, 0, 0, 0.06), 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 2px 2px 1px rgba(0, 0, 0, 0.3);
   cursor: pointer;
@@ -742,11 +736,6 @@ body {
 
 .logo__transition:hover, .logo__transition:focus, .address-transition:hover, .address-transition:focus {
   transform: scale(1.05);
-}
-
-.address-transition:hover, .address-transition:focus {
-  --secondary-text-color:$active-color;
-  --footer-text-color:$active-color;
 }
 
 .footer__contact {
@@ -788,6 +777,10 @@ body {
   fill: rgb(255, 255, 255);
   display: block;
   transition: color, transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  padding: 12px;
 }
 
 .footer__social--item:hover, .footer__social--item:focus {
@@ -798,6 +791,10 @@ body {
 .footer__social--list li {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer__social-icon {
+  fill: rgb(255, 255, 255);
 }
 
 /* ::: Footer :: FooterJoin ::: Fin */

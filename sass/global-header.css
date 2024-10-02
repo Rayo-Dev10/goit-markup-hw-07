@@ -1,4 +1,15 @@
-/* ::: Global :: Inicio :: Header ::: */
+@charset "UTF-8";
+/* Mixin para el contenedor del header */
+/* Mixin para el logo */
+/* Mixin para la sección de navegación */
+/* Mixin para la lista de navegación */
+/* Mixin para la lista de navegación subrayada */
+/* Mixin para los elementos de la lista de navegación y contacto */
+/* Mixin para el estado hover y focus */
+/* Mixin para la lista de contacto */
+/* Mixin para el conjunto de contacto */
+/* Mixin para el ícono de contacto */
+/* Aplicación de los mixins */
 .header__content {
   display: flex;
   align-items: center;
@@ -33,11 +44,17 @@
   border-radius: 2px;
 }
 
-.header__nav-list--item, .header__contact-set--item {
+.header__nav-list--item,
+.header__contact-set--item {
   color: rgb(33, 33, 33);
 }
 
-.header__contact-set--item:hover, .logo__set:hover, .header__nav-list--item:hover, .header__contact-set--item:focus, .logo__set:focus, .header__nav-list--item:focus {
+.header__contact-set--item:hover,
+.logo__set:hover,
+.header__nav-list--item:hover,
+.header__contact-set--item:focus,
+.logo__set:focus,
+.header__nav-list--item:focus {
   color: rgb(33, 150, 243);
   transform: scale(1.1);
 }
@@ -68,9 +85,6 @@
   margin-right: 10px;
   fill: rgb(117, 117, 117);
 }
-
 .contact-set--icon:hover, .contact-set--icon:focus {
   fill: rgb(33, 150, 243);
-}
-
-/* ::: Global :: Fin :: Header ::: *//*# sourceMappingURL=global-header.css.map */
+}/*# sourceMappingURL=global-header.css.map */
