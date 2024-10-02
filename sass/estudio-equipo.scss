@@ -1,75 +1,14 @@
-@import "./normalizacion.scss";
-/* ::: Sección :: Inicio :: Equipo ::: */
-.team {
-    background-color: $background-team-section;
-
-  }
-  
-  .team__title {
-    font-weight: 700;
-    color: $main-text-color;
-    font-size: 36px;
-    text-align: center;
-    line-height: 1;
-    margin-bottom: 50px;
-  }
-  
-  .team__list {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-  }
-  
-  .team__card {
-    background-color: $background-color;
-    border-radius: 0px 0px 4px 4px;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  }
-  
-  .team__info {
-    padding: 30px 0;
-    text-align: center;
-  }
-  
-  .team__member {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    margin-bottom: 10px;
-  }
-  
-  .team__role {
-    font-weight: 400;
-    font-size: 16px;
-    letter-spacing: 0.03em;
-    color: $paragraf-text-color;
-  }
-  
-  .team__rrss--list {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 16px;
-  }
-  
-  .team__rrss--icon {
-    fill: $icon-color;
-    display: block;
-  }
-  
-  .team__rrss--list>li {
-    padding: 12px;
-    border-radius: 50%;
-    transition: color, background-color, transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .team__rrss--list>li:hover,
-  .team__rrss--list>li:focus {
-    background-color: $active-color;
-    --icon-color: $secondary-text-color;
-    cursor: pointer;
-  }
-  
-  /* ::: Sección :: Fin :: Equipo ::: */
+@import "./variables.scss";
+.team{background-color:$background-team-section;}
+.team__title{font-weight:700;color:$main-text-color;font-size:36px;text-align:center;line-height:1;margin-bottom:50px;}
+.team__list{display:flex;justify-content:space-between;gap:30px;}
+.team__card{background-color:$background-color;border-radius:0 0 4px 4px;box-shadow:0 1px 3px rgba(0,0,0,0.12),0 1px 1px rgba(0,0,0,0.14),0 2px 1px rgba(0,0,0,0.2);}
+.team__info{padding:30px 0;text-align:center;}
+.team__member{font-weight:500;font-size:16px;line-height:1.19;letter-spacing:0.03em;margin-bottom:10px;}
+.team__role{font-weight:400;font-size:16px;letter-spacing:0.03em;color:$paragraf-text-color;}
+.team__rrss--list{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;margin-top:16px;}
+.team__rrss--icon{fill:$icon-color;display:block;}
+.team__rrss--list>li{padding:12px;border-radius:50%;transition:color,background-color,transform $duration-time cubic-bezier(0.4,0,0.2,1);}
+.team__rrss--icon:hover{background-color:$active-color;color:$secondary-text-color;}
+.team__rrss--list>li:hover,.team__rrss--list>li:focus{background-color:$active-color;cursor:pointer;}
+.team__rrss--list>li:hover .team__rrss--icon,.team__rrss--list>li:focus .team__rrss--icon{fill:$background-color;}
