@@ -320,6 +320,8 @@ button:focus {
 .team .team__rrss--icon {
   fill: rgb(175, 177, 184);
   display: block;
+  width: 20px;
+  height: 20px;
 }
 .team .team__rrss--list > li {
   padding: 12px;
@@ -737,11 +739,15 @@ body {
   margin-bottom: 9px;
 }
 
-.logo__transition, .address-transition {
+.logo__transition,
+.address-transition {
   transition: color, transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.logo__transition:hover, .logo__transition:focus, .address-transition:hover, .address-transition:focus {
+.logo__transition:hover,
+.logo__transition:focus,
+.address-transition:hover,
+.address-transition:focus {
   transform: scale(1.05);
 }
 
@@ -756,7 +762,8 @@ body {
   color: rgb(255, 255, 255);
 }
 
-.footer__contact--email, .footer__contact--phone {
+.footer__contact--email,
+.footer__contact--phone {
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -790,7 +797,8 @@ body {
   padding: 12px;
 }
 
-.footer__social--item:hover, .footer__social--item:focus {
+.footer__social--item:hover,
+.footer__social--item:focus {
   background-color: rgb(33, 150, 243);
   transform: scale(1.1);
 }
@@ -802,6 +810,8 @@ body {
 
 .footer__social-icon {
   fill: rgb(255, 255, 255);
+  width: 20px;
+  height: 20px;
 }
 
 /* ::: Footer :: FooterJoin ::: Fin */

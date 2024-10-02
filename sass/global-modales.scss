@@ -134,7 +134,7 @@
     &:hover,
     &:focus {
       transform: scale(1.03);
-      font-weight: $font-weight-medium; // Peso de fuente medio
+      font-weight: $font-weight-medium;
     }
   }
 
@@ -158,16 +158,16 @@
 
   .modal-button {
     padding: 10px 76px;
-    font-weight: $font-weight-bold; // Peso de fuente para el botón
+    font-weight: $font-weight-bold;
     font-size: 16px;
     line-height: 1.6;
     letter-spacing: 0.06em;
     background-color: $active-color;
     color: $secondary-text-color;
     border: none;
-    border-radius: $card-border-radius; // Utiliza la variable para el radio de borde
+    border-radius: $card-border-radius;
     position: relative;
-    box-shadow: $box-shadow-light; // Utiliza la variable para la sombra
+    box-shadow: $box-shadow-light;
     transition: transform $duration-time cubic-bezier(0.4, 0, 0.2, 1);
   }
 
@@ -219,7 +219,7 @@
   @include modal; // Aplica el mixin para el modal
 
   .close-btn {
-    border: 1px solid $modal-button-stroke; // Aplica el estilo del botón cerrar
+    border: 1px solid $modal-button-stroke;
   }
 }
 

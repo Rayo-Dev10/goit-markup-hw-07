@@ -47,6 +47,8 @@
 .team .team__rrss--icon {
   fill: rgb(175, 177, 184);
   display: block;
+  width: 20px;
+  height: 20px;
 }
 .team .team__rrss--list > li {
   padding: 12px;
