@@ -421,6 +421,9 @@ button:focus {
 .modal .close-btn {
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
+.modal .close-btn:hover {
+  color: rgb(33, 150, 243);
+}
 
 .modal-form {
   display: block;
